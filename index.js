@@ -1,10 +1,14 @@
-// Function declaration that creates the string
-function greet(name) {
-  return `Hello, ${name}`;
+const person = {
+  name: "John",
+  age: 17,
+};
+
+function verifyAdulthood(personName, personAge) {
+  if (personAge >= 18) return `Welcome, ${personName}!`;
+
+  return `You are not old enough to enter, ${personName}.`;
 }
 
-// Call the function and store the value in a variable
-const greeting = greet("Shane");
+const adultMessage = verifyAdulthood(userName, userAge);
 
-// Print the variable to the console.
-console.log(greeting);
+console.log(adultMessage);
