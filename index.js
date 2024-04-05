@@ -1,12 +1,9 @@
-// Multiplies numbers by a factor
-function multiplyNumbers(factor) {
-  return (number) => number * factor;
+// Adds numbers by themselves
+function incrementScore(number) {
+  return number + number;
 }
 
-// Doubles the multiplier
-const double = multiplyNumbers(2);
-console.log(double(20)); // Will output: 40
+// Test cases
+console.log(incrementScore(3));
 
-// Triples the multiplier
-const triple = multiplyNumbers(3);
-console.log(triple(7)); // WIll output : 21
+console.log(incrementScore(6));
