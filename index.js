@@ -1,4 +1,12 @@
-function numberAddition1(a, b) {
-  return a + b;
+const person = {
+  name: "Doe John",
+  age: 74,
+  isAdult: true,
+};
+
+function developSalutation(single) {
+  return (greeting) => `${greeting}, ${single.name}!`;
 }
-const numberAddition2 = (a, b) => a + b;
+
+const greetDoe = developSalutation(person);
+console.log(greetDoe("Hello")); // Hello, Doe John!
