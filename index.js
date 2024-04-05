@@ -1,19 +1,12 @@
-const person = {
-  name: "Doe John",
-  age: 74,
-  isAdult: true,
-};
-
-function developSalutation(single) {
-  return (greeting) => `${greeting}, ${single.name}!`;
+// Multiplies numbers by a factor
+function multiplyNumbers(factor) {
+  return (number) => number * factor;
 }
 
-const greetDoe = developSalutation(person);
-console.log(greetDoe("Hello")); // Hello, Doe John!
+// Doubles the multiplier
+const double = multiplyNumbers(2);
+console.log(double(20)); // Will output: 40
 
-const greetBob = developSalutation({
-  name: "Bob Doe",
-  age: 12,
-  isAdult: false,
-});
-console.log(greetBob("Hi")); // Will output: Hi, Bob Doe!
+// Triples the multiplier
+const triple = multiplyNumbers(3);
+console.log(triple(7)); // WIll output : 21
