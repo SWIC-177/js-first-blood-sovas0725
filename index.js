@@ -10,3 +10,10 @@ function developSalutation(single) {
 
 const greetDoe = developSalutation(person);
 console.log(greetDoe("Hello")); // Hello, Doe John!
+
+const greetBob = developSalutation({
+  name: "Bob Doe",
+  age: 12,
+  isAdult: false,
+});
+console.log(greetBob("Hi")); // Will output: Hi, Bob Doe!
