@@ -9,10 +9,13 @@ const person = {
   },
 };
 
-// Create a new object with the same properties as the original object.
-const otherPerson = { ...person };
+// Create a new object with the same properties as the original object.)
+const otherPerson = (p, newName) => ({
+  ...p,
+  name: newName,
+});
 
-otherPerson.name = "Jane Doe";
+const updatedPerson = otherPerson(person, "Jane Doe");
 
 console.log(`Person's name is: ${person.name}`);
-console.log(`Other Person's name is: ${otherPerson.name}`);
+console.log(`Other Person's name is: ${updatedPerson.name}`);
