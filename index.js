@@ -29,6 +29,11 @@ const people = [
     name: "Jenny Doe",
     age: 67,
   },
+  {
+    id: 7,
+    name: "Jesse Doe",
+    age: 78,
+  },
 ];
 
 function renameOdds(p) {
